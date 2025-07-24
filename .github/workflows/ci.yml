@@ -19,6 +19,12 @@ jobs:
         with:
           author: Friendseeker
 
+      - name: Test bot that signed Scala CLA
+        id: cla_signed_by_bot
+        uses: ./
+        with:
+          author: "dependabot[bot]"
+
       - name: Test user that did not sign Scala CLA
         id: cla_not_signed
         uses: ./
